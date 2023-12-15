@@ -15,13 +15,13 @@ RUN mkdir /angular
 # Establece el directorio de trabajo
 WORKDIR /angular
 
-# Copia los archivos de tu aplicación al contenedor
-COPY . .
+# Copia los archivos del proyecto de angular al contenedor
+COPY StudentAppDocker/ .
 
 # Instala las dependencias de Node.js
 RUN npm install
 
-# Exponer el puerto 4200 para el servidor de desarrollo de Angular
+# Expone el puerto 4200 para el servidor de desarrollo de Angular
 EXPOSE 4200
 
 # Comando para iniciar la aplicación Angular con el servidor de desarrollo
