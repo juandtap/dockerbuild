@@ -20,3 +20,8 @@ Para asignar un nombre al contenedor
 
 ```docker run --name <nombre contenedor> -p <port>:4200 -it <image_name>```
 
+### Comando para subir imagen a Docker Hub
+
+```docker push <username>/<imagename>:latest```
+
+
